@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_2" data-name="katman 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 319 202.09">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+        stroke-width: 0px;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-7656" y1="101.05" x2="-7337" y2="101.05" gradientTransform="translate(-7337) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".1" stop-color="#e3d7b6"/>
+      <stop offset=".45" stop-color="#e3d7b6"/>
+      <stop offset=".55" stop-color="#e3d7b6"/>
+      <stop offset=".58" stop-color="rgba(227, 215, 182, .87)" stop-opacity=".87"/>
+      <stop offset=".67" stop-color="rgba(227, 215, 182, .57)" stop-opacity=".57"/>
+      <stop offset=".75" stop-color="rgba(227, 215, 182, .32)" stop-opacity=".32"/>
+      <stop offset=".81" stop-color="rgba(227, 215, 182, .15)" stop-opacity=".15"/>
+      <stop offset=".87" stop-color="rgba(227, 215, 182, .04)" stop-opacity=".04"/>
+      <stop offset=".9" stop-color="#e3d7b6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1">
+    <path class="cls-1" d="M.03,95.8h318.97v-4.7H.03v4.7ZM.03,0h318.97v4.7H.03V0ZM.03,75.92h318.97v4.7H.03v-4.7ZM.03,60.74h318.97v4.7H.03v-4.7ZM0,15.18h319v4.7H0v-4.7ZM.03,30.37h318.97v4.7H.03v-4.7ZM.03,45.55h318.97v4.7H.03v-4.7ZM.03,121.47h318.97v4.7H.03v-4.7ZM.03,182.21h318.97v4.7H.03v-4.7ZM.03,197.39h318.97v4.7H.03v-4.7ZM.03,106.29h318.97v4.7H.03v-4.7ZM.03,167.02h318.97v4.7H.03v-4.7ZM.03,151.84h318.97v4.7H.03v-4.7ZM.03,136.66h318.97v4.7H.03v-4.7Z"/>
+  </g>
+</svg>

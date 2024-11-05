@@ -1,0 +1,650 @@
+body{
+    height: 100dvh;
+}
+
+.qr-page .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100dvh;
+    padding: 1.1rem 0px;
+    max-width: 450px;
+}
+
+.ozka {
+    background-image: url('../img/ozka/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ilka {
+    background: linear-gradient(to bottom left, #3cb14a, #97c83e);
+}
+
+
+.irc{
+    background-image: url('../img/irc/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.gtk{
+    background-image: url('../img/gtk/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.qr-page .logo {
+    width: 52%;
+    filter: drop-shadow(4px 4px 8px rgb(80, 80, 80));
+}
+
+.ozka.qr-page .logo {
+    filter: drop-shadow(4px 4px 8px rgb(0,0,0));
+}
+
+
+.ilka .logo {
+    filter: drop-shadow(6px 6px 3px rgb(90, 90, 90));
+    margin-bottom: 1rem;
+}
+
+.irc .logo ,
+.gtk .logo
+{
+    width: 35% !important; 
+    filter: drop-shadow(9px 9px 4px rgb(0, 0, 0));
+}
+
+.qr-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    height: 35vh;
+}
+
+@media (min-aspect-ratio: 8/5) {
+    .qr-container {
+        height: 50vh;
+    }
+}
+
+
+.ilka .qr-container .left-plate,
+.irc .left-plate {
+    display: none;
+}
+
+.qr-container .left-plate {
+    width: 40%;
+    z-index: 3;
+    position: absolute;
+    transform: translate(0, -50%) scaleX(-1);
+    top: 50%;
+    left: 0;
+}
+
+.gtk .left-plate,
+.gtk  .right-plate{
+    width: 35%;
+    filter: drop-shadow(4px 4px 8px rgb(0,0,0));
+    box-shadow: 6px 6px 10px 6px black;;
+}
+
+
+.qr-container .right-plate {
+    width: 40%;
+    z-index: 3;
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    right: 0;
+}
+
+.ilka .qr-container .right-plate {
+    width: 100%;
+    top: 39%;
+}
+
+.irc .right-plate {
+    transform: translate(-50%, -50%);
+    width: 110%;
+    left: 50%;
+    filter: drop-shadow(4px 4px 8px rgb(0,0,0));
+}
+
+.ilka .qr-container .right-plate {
+    top: 25%;
+}
+
+.qr-container .qr-area {
+    min-width: 45%;
+    width: 45%;
+    z-index: 4;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    
+}
+
+.ozka .qr-area{
+    /*filter: drop-shadow(4px 4px 4px rgba(0,0,0));*/
+    box-shadow: 4px 4px 15px 6px black;
+}
+
+.ilka .qr-container .qr-area,
+.irc .qr-area,
+.gtk .qr-area,
+.ilka .qr-container .qr-area {
+    border: .6rem solid white;
+    border-radius: .3rem;
+    min-width: 41%;
+    width: 41%;
+}
+
+
+.ilka .qr-container .qr-area {
+    background-color: #6fbe46;
+    border: 1rem solid #6fbe46;
+    border-radius: 1rem;
+    width: 50%;
+    box-shadow: 4px 4px 12px 0px rgb(60, 60, 60);
+}
+
+.irc .qr-area{
+    background-color: #495661;
+    border-color: #495661;
+    filter: drop-shadow(4px 4px 8px rgb(0,0,0));
+}
+
+.gtk .qr-area{
+    background-color: #1f2530;
+    border-color: #1f2530;
+    box-shadow: 0 0 10px 6px black;
+    width: 50%;
+}
+
+.gtk .qr-area .qr-code{
+    filter: drop-shadow(4px 4px 8px rgb(0,0,0));
+}
+
+.qr-code {
+    width: 100%;
+}
+
+.ilka .qr-code,
+.irc .qr-code {
+    filter: brightness(0) invert(1);
+}
+
+
+.name-area {
+    position: relative;
+    width: 100%;
+}
+
+.ilka .name-area {
+    background-color: white;
+    padding: .7rem 0;
+}
+
+.ilka .name-area {
+    background-color: transparent;
+    filter: drop-shadow(4px 4px 8px rgb(80, 80, 80));
+}
+
+
+.name-hold-container {
+    width: 95%;
+    overflow: hidden;
+    filter: drop-shadow(4px 4px 8px rgb(0,0,0));
+}
+
+.ilka .name-hold-container-big {
+    display: none;
+}
+
+.irc .name-hold-container,
+.gtk .name-hold-container {
+    width: 97%;
+}
+
+.ilka .name-hold-container {
+    display: none;
+}
+
+
+.qr-page.ozka .name-holder {
+    width: 142.2%;
+    position: unset;
+    z-index: 0;
+    margin-left: -43%;
+    /*height: 100px;*/
+}
+
+.irc .name-holder,
+.gtk .name-holder  {
+    width: 120%;
+    margin-left: -20%;
+    position: unset;
+    z-index: 0;
+}
+
+.qr-page.ilka .name-holder {
+    display: none;
+}
+
+.qr-page.ilka .name-holder {
+    display: none;
+}
+
+
+.name-pos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.ilka .name-pos {
+    position: unset;
+    transform: unset;
+}
+
+
+.ilka .name-pos {
+    background: linear-gradient(to right, #d6d6d6, #ffffff);
+    padding: .6rem 0;
+    width: 90%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    height: 6rem;
+}
+
+@media (min-width:550px) {
+    .ilka .name-area{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ilka .name-pos{
+        width: 80%;
+        border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    }
+   
+}
+
+.kartvizit.ilka .name-pos {
+    height: 4.7rem;
+}
+
+
+.name-pos * {
+    white-space: nowrap;
+    text-align: center;
+}
+
+.ilka .name-pos * {
+    position: unset;
+}
+
+.ilka .name-pos * {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    color: #6c6d6f;
+}
+
+
+.ozka .name-pos * {
+    color: #53585f;
+}
+
+.irc .name-pos * {
+    color: #3f4d58;
+}
+
+.gtk .name-pos * {
+    color: #1f2530;
+}
+
+.qr-page .name-pos .name {
+    font-weight: bolder;
+    font-size: 170%;
+}
+
+.irc.qr-page .name-pos .name {
+    font-size: 150%;
+}
+
+.ilka .name-pos .name {
+    top: 30%;
+}
+
+.gtk .name-pos .name{
+    letter-spacing: 1.4px;
+}
+
+.kartvizit.ilka .name-pos .name {
+    top: 40%;
+}
+
+.qr-page .name-pos .position {
+    font-weight: 500;
+    font-size: 100%;
+    letter-spacing: 2.4px;
+}
+
+
+.irc .name-pos .position,
+.kartvizit.irc .name-pos .position {
+    font-weight: 600;
+    font-size: 80%;
+    letter-spacing: 1px;
+}
+
+.gtk .name-pos .position{
+    font-weight: bold;
+    letter-spacing: 1.4px;
+}
+
+.ilka .name-pos .position{
+    color: #70af33;
+    font-weight: 600;
+    font-size: 80%;
+}
+
+.ilka .name-pos .position {
+    top: 60%;
+    color: #55a154;
+    font-weight: 600;
+}
+
+.kartvizit.ilka .name-pos .position {
+    top: 65%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.kartvizit .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.1rem 0px;
+    max-width: 768px;
+    min-height: 100vh;
+}
+
+@media (min-width:768px) {
+    .kartvizit.ozka {
+        background-size: 768px !important;
+        padding: 1rem;
+    }
+}
+
+
+.kartvizit .logo {
+    width: 40%;
+    max-width: calc(450px * .4);
+}
+
+.ozka.kartvizit .logo{
+    filter: drop-shadow(5px 10px 4px rgb(0, 0, 0));
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    min-height: 220px;
+}
+
+.ilka .photo-container {
+    min-height: 260px;
+}
+
+.photo-container .left-plate {
+    width: 35%;
+    z-index: 3;
+    position: absolute;
+    transform: translate(0, -50%) scaleX(-1);
+    top: 50%;
+    left: 0;
+    filter: drop-shadow(5px 10px 4px rgb(0, 0, 0));
+}
+
+.ilka .photo-container .left-plate {
+    display: none;
+}
+
+.photo-container .right-plate {
+    width: 35%;
+    z-index: 3;
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    right: 0;
+    filter: drop-shadow(5px 10px 4px rgb(0, 0, 0));
+}
+
+.ilka .photo-container .right-plate {
+    top: 40%;
+    width: 100%;
+    filter:none;
+}
+
+.irc .photo-container .right-plate{
+    width: 110%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(5px 10px 1px rgb(0, 0, 0));
+}
+
+.photo-container .photo-area {
+    min-width: 40%;
+    width: 40%;
+    z-index: 4;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    filter: drop-shadow(5px 10px 4px rgb(0, 0, 0));
+}
+
+
+.ilka .photo-container .photo-area{
+    filter: drop-shadow(3px 3px 8px rgb(60, 60, 60));
+}
+
+
+.photo {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.ozka .photo {
+    border: 5px solid #febe2d;
+}
+
+.ilka .photo {
+    border: 5px solid #ffffff;
+}
+
+.irc .photo {
+    border: 4px solid #ffffff;
+    filter: drop-shadow(5px 10px 1px rgb(0, 0, 0));
+}
+
+.gtk .photo{
+    border: 4px solid #e3d6b6;
+    filter: drop-shadow(5px 10px 1px rgb(0, 0, 0));
+}
+
+.ilka .photo {
+    background: linear-gradient(white, white) padding-box, 
+              linear-gradient(to right, #d6d6d6 10%, #ffffff 100%) border-box;
+  border: 5px solid transparent;
+  filter:drop-shadow(4px 4px 5px rgb(80,80,80))
+}
+
+@media (min-width:768px) {
+    .kartvizit .name-hold-container {
+        display: none !important;
+    }
+
+}
+
+@media (max-width:767px) {
+    .kartvizit .name-hold-container-big {
+        display: none !important;
+    }
+}
+
+.name-hold-container-big {
+    width: 100%;
+    text-align: center;
+}
+
+
+.kartvizit.ozka .name-holder-big{
+    width: 90%;
+}
+
+.kartvizit.irc .name-holder-big,
+.kartvizit.gtk .name-holder-big{
+    filter: drop-shadow(5px 10px 1px rgb(0, 0, 0));
+    width: 55%;
+}
+
+
+.kartvizit.ozka .name-holder {
+    width: 109.51%;
+    position: unset;
+    z-index: 0;
+    margin-left: -10%;
+    /*height: 100px;*/
+}
+
+
+
+.kartvizit.ozka .name-area {
+    margin-bottom: 1rem;
+    max-width: 450px;
+}
+
+
+/*
+.kartvizit.ilka .name-area {
+    width: 450px;
+    border-radius: 5rem;
+}
+*/
+
+.kartvizit .name-pos .name {
+    font-weight: bolder;
+    font-size: 150%;
+}
+
+.kartvizit .name-pos .position {
+    font-weight: 500;
+    font-size: 90%;
+    letter-spacing: 2px;
+}
+
+.ilka.kartvizit .name-pos .position {
+    font-size: 85%;
+    letter-spacing: 1px;
+    color: #3bad3d;
+    font-weight: 600;
+}
+
+.gtk.kartvizit .name-pos .position{
+    font-weight: bold;
+    letter-spacing: 1.4px;
+}
+
+
+
+.button-area {
+    padding: 0 10%;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.button-area .btn-wrapper {
+    margin-top: .6rem;
+    margin-bottom: .6rem;
+}
+
+.button-area .button {
+    text-decoration: none;
+    color: #414e64;
+    /*width: 100%;*/
+    text-align: center;
+    padding: .7rem;
+    font-size: 110%;
+    font-weight: bold;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(5px 10px 1px rgb(0, 0, 0));
+}
+
+.ozka .button-area .button {
+    background-color: #febe2d;
+}
+
+.ilka .button-area .button {
+    background:linear-gradient(to right, #d6d6d6, #ffffff);
+    filter: drop-shadow(0px 6px 7px rgb(100, 100, 100));
+    
+}
+
+.irc .button-area .button {
+    background-color: #ffffff;
+}
+
+.gtk .button-area .button {
+    background-color: #e3d6b6;
+    color: #1f2530;
+    filter: drop-shadow(5px 10px 1px rgb(0, 0, 0));
+}
+
+.button-area .button .bx {
+    font-size: 150%;
+    margin-right: .5rem;
+    font-weight: lighter;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_2" data-name="katman 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 532.5 355">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clippath">
+      <circle class="cls-1" cx="261.5" cy="128.5" r="85"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1">
+    <g class="cls-3">
+      <image width="5250" height="3500" transform="scale(.1)" xlink:href="Links/young-man-happy-expression-modern-minimalist-company-ai-generated.jpg"/>
+    </g>
+    <path class="cls-2" d="M261.5,47.65c44.58,0,80.85,36.27,80.85,80.85s-36.27,80.85-80.85,80.85-80.85-36.27-80.85-80.85,36.27-80.85,80.85-80.85M261.5,43.5c-46.94,0-85,38.06-85,85s38.06,85,85,85,85-38.06,85-85-38.06-85-85-85h0Z"/>
+  </g>
+</svg>
