@@ -402,7 +402,7 @@ body{
     width: 100%;
     padding: 1.1rem 0px;
     max-width: 768px;
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 @media (min-width:768px) {
